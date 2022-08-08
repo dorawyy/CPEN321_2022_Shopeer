@@ -2,7 +2,7 @@ const SocketServer = require("websocket").server;
 const http = require("http");
 const PORT = 8000;
 
-const {user_collection, room_collection} = require('../config/mongodb_connection')
+const {room_collection} = require('../config/mongodb_connection')
 
 var ObjectId = require("mongodb").ObjectId;
 const server = http.createServer((req, res) => {});
