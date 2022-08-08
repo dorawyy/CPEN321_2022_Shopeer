@@ -1,7 +1,7 @@
 const express = require("express")
 const user_profile_router = express.Router()
 const validator = require('validator')
-const {user_collection, room_collection} = require('../config/mongodb_connection')
+const {user_collection} = require('../config/mongodb_connection')
 
 
 // Profile Submodule
@@ -103,7 +103,7 @@ user_profile_router.post("/registration", async (req, res) => {
         if (find_cursor) {
             res.status(409).send("User already exists")
         }  else {
-            var user_object = create_user_object(profile)
+            // var user_object = create_user_object(profile)
             //var result_debug = await user_collection.insertOne(user_object)
             res.status(201).send("Success")
         }
