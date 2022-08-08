@@ -1,7 +1,7 @@
 const express = require("express")
 const user_peers_router = express.Router()
-var {router, getUser} = require('../user/profile')
-const {user_collection, room_collection} = require('../config/mongodb_connection')
+var {getUser} = require('../user/profile')
+const {user_collection} = require('../config/mongodb_connection')
 
 
 
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV) {
 // console.debug("ENV is: " + process.env.NODE_ENV)
 
 if (process.env.NODE_ENV == "test") {
-    var {dummyVar,getUser} = require("../user/profile_mock")
+    var {dummyVar} = require("../user/profile_mock")
 }
 
 // Peers Submodule
