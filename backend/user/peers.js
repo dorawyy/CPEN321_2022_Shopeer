@@ -16,7 +16,7 @@ if (process.env.NODE_ENV) {
 // console.debug("ENV is: " + process.env.NODE_ENV)
 
 if (process.env.NODE_ENV == "test") {
-    var {dummyVar} = require("../user/profile_mock")
+    // var {dummyVar} = require("../user/profile_mock")
 }
 
 // Peers Submodule
