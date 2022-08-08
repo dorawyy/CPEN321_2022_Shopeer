@@ -610,7 +610,7 @@ describe('Tests for Searches Submodule', function () {
       it('PUT /match/searches this search_name already exists', async function () {
 
         const old_search_name = "ChangedSearchName"
-        const new_search_name = "NewChangedSearchName"
+        // const new_search_name = "NewChangedSearchName"
         await request(app)
           .post('/user/registration')
           .query({
