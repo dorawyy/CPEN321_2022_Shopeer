@@ -3,7 +3,7 @@ const app = express()
 app.use(express.json())
 
 // User Module Router
-const {user_profile_router, getUser} = require('../user/profile.js');
+const {user_profile_router} = require('../user/profile.js');
 app.use('/user', user_profile_router)
 
 const user_peers_router = require('../user/peers.js');
