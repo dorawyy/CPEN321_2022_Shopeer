@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 app.use(express.json())
 const validator = require('validator')
-const {user_collection, room_collection} = require('../config/mongodb_connection')
+const {user_collection} = require('../config/mongodb_connection')
 
 /////////////// match requests //////////////
 // Get Active searches GET https://shopeer.com/match/searches
