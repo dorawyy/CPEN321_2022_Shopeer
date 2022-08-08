@@ -4,7 +4,7 @@ require('validator')
 
 require('../config/app')
 
-const {user_collection, room_collection} = require('../config/mongodb_connection')
+const {user_collection} = require('../config/mongodb_connection')
 
 //const activities = ["groceries", "entertainment", "bulkbuy", "hiking", "restaurants", "fashion", "books"]
 
